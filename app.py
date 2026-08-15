@@ -409,7 +409,7 @@ second CSV upload is required.
         kpi_card("Recommended Model", best_model_name, "Selected on business-first criteria", accent=PURPLE)
 
 # ---------------------------------------------------------------- 2
-with tabs[1]:
+with tabs[2]:
     section_header("Dataset & Data Quality", "Structure, completeness and predictor selection",
                     icon="🧪", accent=TEAL)
 
@@ -439,7 +439,7 @@ with tabs[1]:
     st.dataframe(df_raw.head(20), use_container_width=True, key="raw_head_table")
 
 # ---------------------------------------------------------------- 3
-with tabs[2]:
+with tabs[3]:
     section_header("Exploratory Data Analysis", "Distributions and relationships driving failure risk",
                     icon="📈", accent=BLUE)
     target = summary["target_col"]
@@ -483,7 +483,7 @@ with tabs[2]:
     st.pyplot(fig)
 
 # ---------------------------------------------------------------- 4
-with tabs[3]:
+with tabs[4]:
     section_header("Model Development & Comparison",
                     "Four classifiers trained inside a leakage-safe Pipeline, tuned with GridSearchCV",
                     icon="⚙️", accent=PURPLE)
@@ -510,7 +510,7 @@ with tabs[3]:
             st.write(f"**{name}**: {r['best_params']}")
 
 # ---------------------------------------------------------------- 5
-with tabs[4]:
+with tabs[5]:
     section_header("Model Evaluation", "Recall-first model selection to minimize missed failures",
                     icon="🎯", accent=RED)
     st.markdown("""In predictive maintenance a **False Negative** (predicted *No Failure*, machine
@@ -558,7 +558,7 @@ prioritizes **Recall**, then ROC-AUC, then F1 — not accuracy alone.""")
         c.pyplot(fig)
 
 # ---------------------------------------------------------------- 6
-with tabs[5]:
+with tabs[6]:
     section_header("Feature Importance", "Which operating variables the model weighs most heavily",
                     icon="🔑", accent=PURPLE)
     fi = W["feature_importance"]
@@ -574,7 +574,7 @@ with tabs[5]:
         st.info("Feature importance is not available for this model type.")
 
 # ---------------------------------------------------------------- 7
-with tabs[6]:
+with tabs[7]:
     section_header("Synthetic Prediction & Risk Analysis",
                     "Scoring a demonstration 'unseen' machine population",
                     icon="🧮", accent=BLUE)
@@ -642,7 +642,7 @@ with tabs[6]:
                             key="dl_high_risk_list")
 
 # ---------------------------------------------------------------- 8
-with tabs[7]:
+with tabs[8]:
     section_header("Maintenance Recommendations", "Action guidance by predicted risk tier",
                     icon="🧰", accent=TEAL)
 
@@ -670,7 +670,7 @@ with tabs[7]:
         use_container_width=True, key="maint_top15_table")
 
 # ---------------------------------------------------------------- 9
-with tabs[8]:
+with tabs[1]:
     section_header("Executive Dashboard", "Context → Evidence → Model → Prediction → Decision, at a glance",
                     icon="📊", accent=NAVY)
 
