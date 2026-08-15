@@ -91,8 +91,7 @@ synthetic_df = W["synthetic_df"]
 best = results[best_model_name]
 
 st.title("🛠️ AI-Enabled Predictive Maintenance Dashboard")
-st.caption("Predicting industrial machine failure to support proactive maintenance decisions "
-           "— MBA Working with AI (WAI) Project, Data Mining & Predictive Analytics")
+st.caption("Predicting industrial machine failure to support proactive maintenance decisions ")
 
 tabs = st.tabs([
     "1. Overview", "2. Dataset & Quality", "3. EDA", "4. Model Development",
