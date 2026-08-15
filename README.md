@@ -1,6 +1,6 @@
 # AI-Enabled Predictive Maintenance: Predicting Industrial Machine Failure
 
-MBA Working with AI (WAI) project — Data Mining & Predictive Analytics, IIM Ranchi.
+MBA Working with AI (WAI) assignment — Data Mining & Predictive Analytics, IIM Ranchi.
 
 Predicts machine failure risk from operating conditions (air/process temperature, rotational speed,
 torque, tool wear, machine type) to help maintenance managers prioritize proactive interventions.
